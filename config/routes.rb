@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :currencies
   end
+
+  resource :users, only: [:create]
+  post "/login", to: "users#login"
 end

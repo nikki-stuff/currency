@@ -1,0 +1,11 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "api",
+  "password": "password"
+}
+
+GET http://localhost:3000/api/currencies
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.siiNWehXgiFjSaOFXKex8o3E61vngb63O3ikxfj7JTM
